@@ -5,11 +5,13 @@
 body {
   width: 100%;
   height: 100vh;
+  font-size: 12px;
+  font-family: "Spartan";
 }
 .container {
   width: 100%;
   height: 100vh;
-
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr 1fr;
   grid-template-rows: 1.5fr 0.3fr 1fr;
@@ -21,9 +23,33 @@ body {
 .main {
   grid-area: main;
 }
+
 .main img {
   width: 100%;
   height: 100%;
+}
+.men {
+  top: 50px;
+  position: absolute;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  left: 50px;
+}
+.site {
+  font-size: xx-large;
+  cursor: pointer;
+}
+.menu {
+  margin-left: 60px;
+  font-size: large;
+}
+.menu span {
+  padding: 20px;
+  cursor: pointer;
 }
 .mainside {
   grid-area: mainside;
@@ -43,6 +69,7 @@ body {
 .mainside div .sum {
   color: gray;
   font-size: large;
+  font-weight: 500;
 }
 .mainside div .fot span {
   word-spacing: 5px;
@@ -110,7 +137,7 @@ body {
 .button .left {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: hsl(0, 0%, 27%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +146,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: gray;
+  background-color: hsl(0, 0%, 63%);
   align-items: center;
   justify-content: center;
 }
